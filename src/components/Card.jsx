@@ -3,6 +3,7 @@ import vk from "../images/vk.svg";
 import view from "../images/view.svg";
 import comments from "../images/comments.svg";
 import button_arrow from "../images/button_arrow.svg";
+import '../styles/Card.css'
 
 const Card = () => {
     return (
