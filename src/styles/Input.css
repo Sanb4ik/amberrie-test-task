@@ -55,7 +55,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border: none;
     cursor: pointer;
     /* Задайте свойство background-image для крестика */
-    background-image: url('../images/cross.svg'); /* Путь к изображению крестика */
+    background-image: url('../images/Header/cross.svg'); /* Путь к изображению крестика */
     background-size: contain;
 }
 
@@ -66,5 +66,9 @@ input:focus{
 input:focus + button{
     background: #FF5C00;
     color: white;
+}
+
+input:focus + .App{
+    filter: blur(100rem);
 }
 

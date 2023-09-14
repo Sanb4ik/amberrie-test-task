@@ -1,9 +1,9 @@
 import main from './images/main_image.svg'
 import './App.css';
 import Nav from "./components/Nav";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Card from "./components/Card";
-import Input from "./components/Input";
+import Input from "./components/Header/Input";
 
 
 function App() {

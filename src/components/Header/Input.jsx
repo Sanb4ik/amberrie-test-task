@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Input.css'
-import search from "../images/search.svg";
+import '../../styles/Input.css'
+import search from "../../images/Header/search.svg";
 
 const Input = () => {
     return (

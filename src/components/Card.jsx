@@ -1,7 +1,7 @@
 import React from 'react';
-import vk from "../images/vk.svg";
+import vk from "../images/Header/vk.svg";
 import view from "../images/view.svg";
-import comments from "../images/comments.svg";
+import comments from "../images/Header/comments.svg";
 import button_arrow from "../images/button_arrow.svg";
 import '../styles/Card.css'
 
