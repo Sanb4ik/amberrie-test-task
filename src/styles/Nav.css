@@ -1,19 +1,19 @@
 nav{
     background: var(--white-50, rgba(255, 255, 255, 0.50));
     display: flex;
-    padding: 7px 280px 9px 280px;
+    padding: 7rem 280rem 9rem 280rem;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 28rem;
 }
 
 nav p{
     color: var(--black-40, rgba(0, 0, 0, 0.40));
     text-align: right;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 441;
-    line-height: 100%; /* 16px */
+    line-height: 100%; /* 16rem */
     text-transform: lowercase;
 }

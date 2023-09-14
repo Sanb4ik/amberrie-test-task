@@ -2,23 +2,23 @@
 
 header{
     display: flex;
-    padding: 26px 280px 26px 280px;
+    padding: 26rem 280rem 26rem 280rem;
     justify-content: space-between;
     background: #F1EAEE;
-    /*margin-bottom: 55px;*/
+    /*margin-bottom: 55rem;*/
 }
 
 .logos{
     display: flex;
     justify-content: space-between;
-    gap: 9px;
-    padding: 0 9px 0 9px;
+    gap: 9rem;
+    padding: 0 9rem 0 9rem;
 }
 .logo{
-    padding: 8px;
-    width: 44px;
-    height: 44px;
-    border-radius: 22px;
+    padding: 8rem;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 22rem;
     background: white;
 }
 
@@ -28,11 +28,11 @@ header{
 }
 
 .search-field {
-    width: 420px;
-    padding: 10px 35px 10px 15px;
+    width: 420rem;
+    padding: 10rem 35rem 10rem 15rem;
     border: none;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 100rem;
     outline: none;
 }
 
@@ -40,58 +40,58 @@ header{
     background: transparent;
     border: none;
     outline: none;
-    /*margin-left: -170px;*/
+    /*margin-left: -170rem;*/
 }
 
 .search-button img {
-    width: 20px;
-    height: 20px;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
 }
 
 .header_buttons{
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 14rem;
 }
 
 .header_button{
     position: relative;
     display: flex;
     align-items: center;
-    width: 29px;
-    height: 44px;
+    width: 29rem;
+    height: 44rem;
 }
 
 .header__button{
-    padding: 8px;
-    width: 44px;
-    height: 44px;
-    border-radius: 22px;
+    padding: 8rem;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 22rem;
     border: none;
     background: rgba(255, 255, 255, 0.30);
 }
 
 .header_button p{
     position: absolute;
-    width: 14px;
-    height: 14px;
-    right: 2px;
-    top:5px;
+    width: 14rem;
+    height: 14rem;
+    right: 2rem;
+    top:5rem;
     background-color: #FF5C00;
-    font-size: 14px;
-    border-radius: 14px;
+    font-size: 14rem;
+    border-radius: 14rem;
     color:  #FFF;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    line-height: 100%; /* 14px */
-    letter-spacing: -0.7px;
+    line-height: 100%; /* 14rem */
+    letter-spacing: -0.7rem;
     text-transform: uppercase;
 }
 .header_button img{
-    width: 22px;
-    height: 22px;
+    width: 22rem;
+    height: 22rem;
 }
 

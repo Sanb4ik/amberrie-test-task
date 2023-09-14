@@ -67,3 +67,6 @@ select {
   font: inherit;
 }
 
+html{
+  font-size: calc(1vw / 18.5);
+}

@@ -1,46 +1,46 @@
 .card {
-    padding: 28px;
-    border-radius: 12px;
+    padding: 28rem;
+    border-radius: 12rem;
     background: #FFF;
-    box-shadow: 0px 6px 16px 0px rgba(68, 61, 65, 0.06);
+    box-shadow: 0rem 6rem 16rem 0rem rgba(68, 61, 65, 0.06);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20rem;
 }
 
 .card_cap{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 10rem;
 }
 
 .grid__item_logo{
-    width: 45px;
-    height: 50px;
+    width: 45rem;
+    height: 50rem;
 }
 
 .grid__item_p{
     color: #000;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 20rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 28px */
+    line-height: 140%; /* 28rem */
 }
 
 .views{
-    border-radius: 8px;
-    border: 1px solid #FFC3A0;
+    border-radius: 8rem;
+    border: 1rem solid #FFC3A0;
     background:  #FFEEE4;
-    padding: 0px 12px 22px 12px;
-    /*gap: 20px;*/
+    padding: 0rem 12rem 22rem 12rem;
+    /*gap: 20rem;*/
 }
 
 .view_hat{
     display: flex;
-    height: 58px;
-    /*padding: 0px 12px;*/
+    height: 58rem;
+    /*padding: 0rem 12rem;*/
     justify-content: space-between;
     align-items: center;
 }
@@ -48,28 +48,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 4rem;
     color:  #252525;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 17rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; /* 18.7px */
+    line-height: 110%; /* 18.7rem */
 }
 
 .price_container {
     display: grid;
-    /*padding: 0px 12px;*/
+    /*padding: 0rem 12rem;*/
     grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
     grid-template-rows: 1fr 1fr; /* Three equal rows */
-    gap: 8px; /* Adjust the gap between columns and rows */
+    gap: 8rem; /* Adjust the gap between columns and rows */
 }
 
 .price_item {
-    /*padding: 10px;*/
+    /*padding: 10rem;*/
     text-align: center;
-    border-radius: 6px;
-    border: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+    border-radius: 6rem;
+    border: 1rem solid var(--black-40, rgba(0, 0, 0, 0.40));
     background:  #F8F9FB;
     display: flex;
     flex-direction: column;
@@ -77,53 +77,53 @@
 .price_item_amount{
     color:  #252525;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 900;
-    line-height: 140%; /* 22.4px */
-    border-bottom: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+    line-height: 140%; /* 22.4rem */
+    border-bottom: 1rem solid var(--black-40, rgba(0, 0, 0, 0.40));
 }
 
 .price_item_spec{
     display: flex;
     flex-direction: row;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
-    letter-spacing: -0.32px;
+    line-height: 140%; /* 22.4rem */
+    letter-spacing: -0.32rem;
 }
 
 .price_item_sale{
     display: flex;
-    width: 36px;
-    height: 29px;
-    padding: 4px 0px 3px 0px;
+    width: 36rem;
+    height: 29rem;
+    padding: 4rem 0rem 3rem 0rem;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 10rem;
     flex-shrink: 0;
     color:  #FF5C00;
 
-    border-right: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));;
+    border-right: 1rem solid var(--black-40, rgba(0, 0, 0, 0.40));;
 }
 
 .price_item_cost{
     display: flex;
-    width: 65px;
-    height: 29px;
-    padding: 3px 0px;
+    width: 65rem;
+    height: 29rem;
+    padding: 3rem 0rem;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 10rem;
     flex-shrink: 0;
     color: #252525;
 }
 
 .cost_rotate{
-    width: 65.071px;
-    height: 17.473px;
+    width: 65.071rem;
+    height: 17.473rem;
     transform: rotate(-11.645deg);
     flex-shrink: 0;
 }
@@ -139,19 +139,19 @@
 
 .card_button{
     display: flex;
-    gap: 2px; /*6px*/
+    gap: 2rem; /*6rem*/
     background: none;
-    max-width: 151px;
-    min-width: 151px;
-    padding: 6px 12px 6px 20px;
+    max-width: 151rem;
+    min-width: 151rem;
+    padding: 6rem 12rem 6rem 20rem;
     justify-content: center;
     align-items: center;
-    border-radius: 1000px;
-    border: 1px solid #FF5C00;
+    border-radius: 1000rem;
+    border: 1rem solid #FF5C00;
     color:  #FF5C00;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 16rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%; /* 24rem */
 }

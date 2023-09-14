@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /**/
+
 :root{
   --white-50:rgba(255, 255, 255, 0.50);
   --black-40: rgba(0, 0, 0, 0.40)
@@ -8,60 +9,61 @@
 .container{
   display: flex;
   flex-direction: column;
-  padding: 0 280px 0 280px;
+  padding: 0 280rem 0 280rem;
   height: 100vh;
 
   background: url("./images/background.svg");
+  background-size: 100% ;
   background-repeat: no-repeat;
 }
 
 
 .content{
-  padding-top: 34px;
+  padding-top: 34rem;
   display: flex;
   flex-direction: row;
 }
 
 .content main{
-  width: 593px;
+  width: 593rem;
   display: flex;
   flex-direction: column;
 }
 
 .content main h1{
-  /*padding-top: 90px;*/
+  /*padding-top: 90rem;*/
   color: #252525;
   font-family: Roboto;
-  font-size: 51px;
+  font-size: 51rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 117%; /* 67.86px */
-  letter-spacing: -1.16px;
+  line-height: 117%; /* 67.86rem */
+  letter-spacing: -1.16rem;
 }
 
 .content main p{
-  padding-top: 10px;
-  width: 494px;
+  padding-top: 10rem;
+  width: 494rem;
   color:  #252525;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 20rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 28px */
+  line-height: 140%; /* 28rem */
 }
 
 .sale{
-  box-shadow: 0px 6px 16px 0px rgba(68, 61, 65, 0.06);
-  margin-top: 50px;
-  border-radius: 60px;
-  width: 330px;
-  height: 120px;
-  border: solid 2px #FFDADA;
+  box-shadow: 0rem 6rem 16rem 0rem rgba(68, 61, 65, 0.06);
+  margin-top: 50rem;
+  border-radius: 60rem;
+  width: 330rem;
+  height: 120rem;
+  border: solid 2rem #FFDADA;
   display: flex;
-  width: 330px;
   background: url('./images/sale.svg');
+  background-size: 330rem;
   background-repeat: no-repeat;
-  /*padding: 0px 36px 6px 48px;*/
+  /*padding: 0rem 36rem 6rem 48rem;*/
   justify-content: space-around;
   align-items: center;
   align-content: center;
@@ -69,27 +71,29 @@
 
 .sale button{
   display: flex;
-  height: 48px;
-  padding: 14px 20px 16px 20px;
+  height: 48rem;
+  padding: 14rem 20rem 16rem 20rem;
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 14rem;
   color: white;
   text-align: center;
   font-family: Roboto;
   border: none;
-  font-size: 17px;
+  font-size: 17rem;
   font-style: normal;
   font-weight: 500;
   line-height: 105%;
-  border-radius: 28px;
+  border-radius: 28rem;
   background:  linear-gradient(90deg, #DD0085 -7.31%, #FF003C 54.55%, #FF7A00 117.06%);
 }
 
 .sale_info{
   background: url('./images/fire.svg');
-  max-width: 120px;
-  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 120rem;
+  max-width: 120rem;
+  height: 120rem;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -99,26 +103,26 @@
 .sale_info .p{
   color: #000;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 18rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 110%; /* 19.8px */
+  line-height: 110%; /* 19.8rem */
 }
 
 .sale_info h3{
   color: #252525;
   text-align: center;
   font-family: Roboto;
-  font-size: 43px;
+  font-size: 43rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%; /* 47.3px */
-  letter-spacing: -0.86px;
+  line-height: 110%; /* 47.3rem */
+  letter-spacing: -0.86rem;
   text-transform: uppercase;
 }
 
 .sales__section{
-  margin-top: 96px;
+  margin-top: 96rem;
   display: flex;
   flex-direction: column;
 }
@@ -128,30 +132,30 @@
   justify-content: space-between;
   color:  #252525;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 36rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 43.2px */
+  line-height: 120%; /* 43.2rem */
 }
 
 .price_swith{
   color:  #252525;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 16rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24rem;
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 10rem;
 }
 
 .grid_container {
-  padding-top: 36px;
+  padding-top: 36rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-  gap: 27px; /* Adjust the gap between columns */
+  gap: 27rem; /* Adjust the gap between columns */
 }
 
 
@@ -160,8 +164,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 60rem;
+  height: 34rem;
 }
 .slider {
   position: absolute;
@@ -178,10 +182,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 26rem;
+  width: 26rem;
+  left: 4rem;
+  bottom: 4rem;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -192,18 +196,18 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1rem #2196F3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(26rem);
+  -ms-transform: translateX(26rem);
+  transform: translateX(26rem);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 34rem;
 }
 
 .slider.round:before {
