@@ -24,6 +24,12 @@
   flex-direction: row;
 }
 
+.content img{
+  width: 672rem;
+  height: 462.955rem;
+  flex-shrink: 0;
+}
+
 .content main{
   width: 593rem;
   display: flex;

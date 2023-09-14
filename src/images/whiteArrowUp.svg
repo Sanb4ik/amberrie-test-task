@@ -1,0 +1,10 @@
+<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SN Icons 28-28">
+<mask id="mask0_118_23817" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="28">
+<rect id="Bounding box" x="0.5" width="28" height="28" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_118_23817)">
+<path id="arrow_back_ios_new" d="M4.5 17L14.5 7L24.5 17L22.725 18.775L14.5 10.55L6.275 18.775L4.5 17Z" fill="white"/>
+</g>
+</g>
+</svg>

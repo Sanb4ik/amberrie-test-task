@@ -8,12 +8,75 @@ header{
     /*margin-bottom: 55rem;*/
 }
 
+.header__logo{
+    height: 44rem;
+}
+
+.header_menu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 26rem;
+}
+
+.header_menu:hover .logos_name{
+    visibility: visible;
+}
+
 .logos{
     display: flex;
     justify-content: space-between;
     gap: 9rem;
-    padding: 0 9rem 0 9rem;
+    padding: 0 9rem 0 0rem;
 }
+
+._hidden{
+    visibility: hidden;
+}
+
+._down{
+    top: 117rem;
+}
+
+.arrow_up{
+    rotate: 180deg;
+    color: white;
+}
+
+.button_orange{
+    background-color: #FF5C00;
+}
+
+.button_grey{
+    background: rgba(255, 255, 255, 0.30);
+}
+
+
+.logos_name{
+    visibility: hidden;
+    /*display: none;*/
+    position: absolute;
+    top: 47rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+}
+
+.logos_name div{
+    min-width: 44rem;
+    display: flex;
+    justify-content: center;
+}
+
 .logo{
     padding: 8rem;
     width: 44rem;
@@ -69,7 +132,7 @@ header{
     height: 44rem;
     border-radius: 22rem;
     border: none;
-    background: rgba(255, 255, 255, 0.30);
+
 }
 
 .header_button p{
