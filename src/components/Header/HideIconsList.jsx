@@ -9,16 +9,15 @@ import soundCloud from "../../images/Header/soundClound.svg";
 import steam from "../../images/Header/steam.svg";
 
 const HideIconsList = () => {
+
+    const elements = [avito, yamap, discord, twitter, facebook, twogis, soundCloud, steam]
+
+    const logos = elements.map(el=> {return <img src ={el} className={"logo_img"} />})
+
+
     return (
         <>
-            <img src={avito} className={'logo_img'} />
-            <img src={yamap} className={'logo_img'} />
-            <img src={discord} className={'logo_img'} />
-            <img src={twitter} className={'logo_img'} />
-            <img src={facebook} className={'logo_img'} />
-            <img src={twogis} className={'logo_img'} />
-            <img src={soundCloud} className={'logo_img'} />
-            <img src={steam} className={'logo_img'} />
+            {logos}
         </>
     );
 };

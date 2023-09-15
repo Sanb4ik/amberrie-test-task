@@ -6,8 +6,9 @@ const Input = () => {
     return (
         <div className='search_container'>
             <img className='search_icon' src={search}/>
-            <input type='search' />
+            <input className='header_input' type='search' />
             <button>Найти</button>
+            <div className='blur'></div>
         </div>
     );
 };

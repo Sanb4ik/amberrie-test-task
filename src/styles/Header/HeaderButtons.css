@@ -1,0 +1,49 @@
+.header_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 14rem;
+}
+
+.header_button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 29rem;
+    height: 44rem;
+}
+
+.header__button{
+    padding: 8rem;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 22rem;
+    border: none;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_button p{
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    right: 2rem;
+    top:5rem;
+    background-color: #FF5C00;
+    font-size: 14rem;
+    border-radius: 14rem;
+    color:  #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14rem */
+    letter-spacing: -0.7rem;
+    text-transform: uppercase;
+}
+
+.header_button img{
+    width: 22rem;
+    height: 22rem;
+}

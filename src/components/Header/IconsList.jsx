@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import vk from "../../images/Header/vk.svg";
 import instagram from "../../images/Header/instagram.svg";
 import youtube from "../../images/Header/youtube.svg";
@@ -7,12 +7,21 @@ import twitch from "../../images/Header/twitch.svg";
 import tiktok from "../../images/Header/tik-tok.svg";
 import like from "../../images/Header/like.svg";
 import ok from "../../images/Header/ok.svg";
+import NetworkMenu from "./NetworkMenu";
 
 const IconsList = () => {
+    const [show, setShow] = useState(false)
+
+
+    const handleClick = () => {
+        setShow(!show)
+    }
+
     return (
         <>
-            <img src={vk} className={'logo_img'} />
-            <img src={instagram} className={'logo_img'}/>
+            <img src={vk} className={'logo_img'} onClick={handleClick}/>
+            {show && <NetworkMenu/>}
+            <img src={instagram} className={'logo_img'} />
             <img src={youtube} className={'logo_img'} />
             <img src={telegram} className={'logo_img'} />
             <img src={twitch} className={'logo_img'} />

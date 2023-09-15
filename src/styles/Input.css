@@ -6,7 +6,6 @@
     border-radius: 22rem;
     width: 420rem;
     height: 44rem;
-    gap:12rem;
     padding: 3rem 4rem 3rem 15rem;
 }
 .search_icon{
@@ -14,6 +13,7 @@
     height: 36rem;
 }
 .search_container input{
+    margin-left: 12rem;
     width: 100%;
     background-color: transparent;
     border: none;
@@ -56,19 +56,27 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
     /* Задайте свойство background-image для крестика */
     background-image: url('../images/Header/cross.svg'); /* Путь к изображению крестика */
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
-input:focus{
+/*.header_input:focus-within ~ .container{*/
+/*    filter: blur(7rem);*/
+/*}*/
+
+.header_input:focus{
     color: #252525;
 }
 
-input:focus + button{
+.header_input:focus + button{
     background: #FF5C00;
     color: white;
 }
 
-input:focus + .App{
-    filter: blur(100rem);
+.search_container:hover{
+    background-color: #FFF;
 }
+
+
+
 

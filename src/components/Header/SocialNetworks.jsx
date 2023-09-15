@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
 import whiteArrowUp from "../../images/Header/whiteArrowUp.svg";
 import arrow_down from "../../images/Header/down_arrow.svg";
+import '../../styles/Header/SocialIcons.css'
 import NameList from "./NameList";
 import IconsList from "./IconsList";
 import HideIconsList from "./HideIconsList";
+import NetworkMenu from "./NetworkMenu";
 
 const SocialNetworks = () => {
     const [showBlock, setShowBlock] = useState(false);
     const handleButtonClick = () => {
-        setShowBlock(!showBlock); // Переключаем состояние блока при клике
+        setShowBlock(!showBlock);
     };
 
     const upIconNames = ['ВКонта', 'Instagr*', 'Youtube', 'Telegra', 'Twitch', 'Tik-Tok', 'Likee', 'Однокл', 'Еще...']
@@ -27,6 +29,9 @@ const SocialNetworks = () => {
                         :
                         <button className='header__button button_grey' onClick={handleButtonClick}>
                             <img src={arrow_down} />
+                            <div className='dropdown_content'>
+                                safdda
+                            </div>
                         </button>
                 }
             </div>
@@ -37,8 +42,9 @@ const SocialNetworks = () => {
                     <button className='header__button _hidden'/>
                 </div>
             }
-            <NameList iconNames={upIconNames} className={'logos_name up'}/>
-            <NameList iconNames={downIconNames} className={'logos_name down'}/>
+
+            <NameList iconNames={upIconNames} className={'logos_name up'} showBlock={showBlock} up={true}/>
+            <NameList iconNames={downIconNames} className={'logos_name down'} showBlock={showBlock} up={false}/>
         </div>
     );
 };

@@ -1,0 +1,16 @@
+
+
+.header{
+    display: flex;
+    padding: 26rem 280rem 26rem 280rem;
+    justify-content: space-between;
+    background: #F1EAEE;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*margin-bottom: 55rem;*/
+}
+/*.header.sticky {*/
+/*    background-color: white; !* Change background color when sticky *!*/
+/*}*/
+

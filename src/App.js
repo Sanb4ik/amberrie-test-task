@@ -3,16 +3,15 @@ import './App.css';
 import Nav from "./components/Nav";
 import Header from "./components/Header/Header";
 import Card from "./components/Card";
-import Input from "./components/Header/Input";
 
 
 function App() {
     return (
         <div className="App">
             <Nav/>
-            <Header/>
-            <div className='container'>
-
+            <Header />
+            <div className='container' >
+                {/*style={{ filter: 'blur(7rem)'}}*/}
                 <div className="content">
                     <main>
                         <h1>Накрутка и продвижение в социальных сетях</h1>
@@ -36,11 +35,13 @@ function App() {
                 <section className='sales__section'>
                     <div className='sales__hits'>
                         <p>Хиты продаж</p>
-                        <div className='price_swith'>
+                        <div className='price_switch'>
                             <p>Цена за</p>
                             <label className="switch">
                                 <input type="checkbox"/>
-                                    <span className="slider round"></span>
+                                    <span className="slider round">
+                                        <p style={{color:'#FF5C00'}}>1 шт</p><p> 100 шт</p>
+                                    </span>
                             </label>
                         </div>
                     </div>
