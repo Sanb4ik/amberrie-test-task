@@ -23,15 +23,13 @@ const SocialNetworks = () => {
                 {
                     showBlock
                         ?
-                        <button className='header__button button_orange' onClick={handleButtonClick}>
-                            <img src={whiteArrowUp}  />
+                        <button className='header__button_more button_orange' onClick={handleButtonClick}>
+                            <img src={whiteArrowUp} className='header__button_more_img'/>
                         </button>
                         :
-                        <button className='header__button button_grey' onClick={handleButtonClick}>
-                            <img src={arrow_down} />
-                            <div className='dropdown_content'>
-                                safdda
-                            </div>
+                        <button className='header__button_more button_grey ' onClick={handleButtonClick}>
+                            <img src={arrow_down}  className='header__button_more_img'/>
+
                         </button>
                 }
             </div>

@@ -9,14 +9,14 @@ const HeaderButtons = () => {
         <div className='header_buttons'>
             <div className="header_button">
                 <p>3</p>
-                <img src={bell}/>
+                <img src={bell} className='header_button_img'/>
             </div>
             <div className="header_button">
                 <p>3</p>
-                <img src={basket}/>
+                <img src={basket} className='header_button_img'/>
             </div>
-            <div >
-                <img src={profile}/>
+            <div className="header_button">
+                <img src={profile} className='header_button_profile_img'/>
             </div>
         </div>
     );

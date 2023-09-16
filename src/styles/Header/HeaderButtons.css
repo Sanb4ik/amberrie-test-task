@@ -43,7 +43,13 @@
     text-transform: uppercase;
 }
 
-.header_button img{
+.header_button_img{
     width: 22rem;
     height: 22rem;
+}
+
+.header_button_profile_img{
+    width: 40rem;
+    height: 40rem;
+    margin-left: -6rem;
 }

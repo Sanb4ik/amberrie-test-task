@@ -8,9 +8,15 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    /*margin-bottom: 55rem;*/
 }
-/*.header.sticky {*/
-/*    background-color: white; !* Change background color when sticky *!*/
-/*}*/
+
+.header__logo{
+    width: 123rem;
+    height: 44rem;
+    flex-shrink: 0;
+}
+
+
+
+
 

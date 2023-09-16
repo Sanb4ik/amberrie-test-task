@@ -6,7 +6,7 @@ const NameList = ({className, iconNames, showBlock, up}) => {
         <div key={index}>
         {
             (index === 8 && showBlock)
-            ?
+                ?
                 <p className='hide'>Скрыть</p>
                 :
                 str

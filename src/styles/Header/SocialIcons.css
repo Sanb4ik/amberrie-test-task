@@ -13,6 +13,22 @@
     visibility: visible;
 }
 
+.header__button_more{
+    padding: 8rem;
+    width: 44rem;
+    height: 44rem;
+    border-radius: 22rem;
+    border: none;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__button_more_img{
+    width: 29rem;
+}
+
 
 .logos{
     display: flex;
