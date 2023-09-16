@@ -35,6 +35,7 @@
     justify-content: space-between;
     gap: 9rem;
     padding: 0 9rem 0 0rem;
+    position: relative;
 }
 
 .logos_down{
@@ -64,12 +65,21 @@
     background-color: #FF5C00;
 }
 
+
 .button_grey{
     background: rgba(255, 255, 255, 0.30);
+    position: relative;
 }
+
+
 
 .button_grey:hover {
     background-color: #FFF;
+}
+
+.button_grey:hover .dropdown-content {
+    display: block;
+    left: 3rem;
 }
 
 .dropdown_content{
@@ -132,4 +142,5 @@
     height: 44rem;
     border-radius: 22rem;
     background: white;
+
 }

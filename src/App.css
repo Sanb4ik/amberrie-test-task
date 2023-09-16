@@ -229,6 +229,7 @@ input:checked + .slider:before {
   font-style: normal;
   font-weight: 600;
   line-height: 24rem;
+
 }
 
 /* Rounded sliders */

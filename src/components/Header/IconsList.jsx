@@ -8,26 +8,31 @@ import tiktok from "../../images/Header/tik-tok.svg";
 import like from "../../images/Header/like.svg";
 import ok from "../../images/Header/ok.svg";
 import NetworkMenu from "./NetworkMenu";
+import useSticky from "../../hooks/useSticky";
+
+
+function IconItem({logo, index}){
+    const isHeaderSticky = useSticky()
+
+
+    return (
+        <div className='dropdown'>
+            <img src={logo}
+                 className={'logo_img'}
+                 style={{backgroundColor: `${isHeaderSticky ? '#F0F1F2' : ''}`}} />
+             <NetworkMenu left={`${44*index+ 9*index}rem`}/>
+        </div>
+    )
+}
 
 const IconsList = () => {
-    const [show, setShow] = useState(false)
-
-
-    const handleClick = () => {
-        setShow(!show)
-    }
+    const icons = [vk, instagram, youtube, telegram, twitch, tiktok, like, ok]
 
     return (
         <>
-            <img src={vk} className={'logo_img'} onClick={handleClick}/>
-            {show && <NetworkMenu/>}
-            <img src={instagram} className={'logo_img'} />
-            <img src={youtube} className={'logo_img'} />
-            <img src={telegram} className={'logo_img'} />
-            <img src={twitch} className={'logo_img'} />
-            <img src={tiktok} className={'logo_img'} />
-            <img src={like} className={'logo_img'} />
-            <img src={ok} className={'logo_img'} />
+            {icons.map((item, index) => (
+                <IconItem key={index} logo={item} index={index}/>
+            ))}
         </>
     );
 };

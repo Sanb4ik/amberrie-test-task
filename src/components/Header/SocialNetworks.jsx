@@ -6,6 +6,7 @@ import NameList from "./NameList";
 import IconsList from "./IconsList";
 import HideIconsList from "./HideIconsList";
 import NetworkMenu from "./NetworkMenu";
+import MoreNetworks from "./MoreNetworks";
 
 const SocialNetworks = () => {
     const [showBlock, setShowBlock] = useState(false);
@@ -29,7 +30,7 @@ const SocialNetworks = () => {
                         :
                         <button className='header__button_more button_grey ' onClick={handleButtonClick}>
                             <img src={arrow_down}  className='header__button_more_img'/>
-
+                            <MoreNetworks/>
                         </button>
                 }
             </div>
