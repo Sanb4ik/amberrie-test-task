@@ -19,36 +19,36 @@ const NetworkMenu = () => {
             <div className="network_menu_hat">
                 ВКонтакте
             </div>
-            <div className="network_menu_item">
-                <div className='text_img'>
-                    <img src={like}/>
+            <div className="network_menu_item_container">
+                <div className='network_menu_item'>
+                    <img src={like} className='network_menu_item_img'/>
                     <p>Лайки</p>
                 </div>
                 <img src={rightArrow} className='right_arrow_img' />
             </div>
-            <div className="network_menu_item">
-                <div className='text_img'>
-                    <img src={voice}/>
+            <div className="network_menu_item_container">
+                <div className='network_menu_item'>
+                    <img src={voice} className='network_menu_item_img'/>
                     <p>Голоса</p>
                 </div>
             </div>
-            <div className="network_menu_item">
-                <div className='text_img'>
-                    <img src={subscribers}/>
+            <div className="network_menu_item_container">
+                <div className='network_menu_item'>
+                    <img src={subscribers} className='network_menu_item_img'/>
                     <p>Подписчики</p>
                 </div>
             </div>
-            <div className={`network_menu_item ${showBlock ? '_hover': ''}`}>
-                <div className='text_img'>
-                    <img src={view}/>
+            <div className={`network_menu_item_container ${showBlock ? '_hover': ''}`}>
+                <div className='network_menu_item'>
+                    <img src={view} className='network_menu_item_img'/>
                     <p>Просмотры</p>
                 </div>
                 <img src={rightArrow} className='right_arrow_img' onClick={handleButtonClick}/>
                 {showBlock && <SecondNetworkMenu/>}
             </div>
-            <div className="network_menu_item">
-                <div className='text_img'>
-                    <img src={repost}/>
+            <div className="network_menu_item_container">
+                <div className='network_menu_item'>
+                    <img src={repost} className='network_menu_item_img'/>
                     <p>Репосты</p>
                 </div>
             </div>

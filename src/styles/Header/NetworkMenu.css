@@ -13,7 +13,7 @@
     box-shadow: 4rem 6rem 18rem 0 rgba(75, 61, 69, 0.20);
 }
 
-.network_menu_item{
+.network_menu_item_container{
     display: flex;
     padding: 3rem 17rem 3rem 4rem;
     justify-content: space-between;
@@ -48,10 +48,15 @@
     line-height: 110%; /* 17.6rem */
 }
 
-.text_img{
+.network_menu_item{
     display: flex;
     align-items: center;
     gap: 4rem
+}
+
+.network_menu_item_img{
+    width: 28rem;
+    height: 28rem;
 }
 
 .right_arrow_img{
