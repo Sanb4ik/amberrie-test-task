@@ -7,9 +7,11 @@ import IconsList from "./IconsList";
 import HideIconsList from "./HideIconsList";
 import NetworkMenu from "./NetworkMenu";
 import MoreNetworks from "./MoreNetworks";
+import useSticky from "../../hooks/useSticky";
 
 const SocialNetworks = () => {
     const [showBlock, setShowBlock] = useState(false);
+    const isSticky =useSticky()
     const handleButtonClick = () => {
         setShowBlock(!showBlock);
     };
@@ -26,6 +28,7 @@ const SocialNetworks = () => {
                         ?
                         <button className='header__button_more button_orange' onClick={handleButtonClick}>
                             <img src={whiteArrowUp} className='header__button_more_img'/>
+                            {isSticky && <div className='for_sticky'></div>}
                         </button>
                         :
                         <button className='header__button_more button_grey ' onClick={handleButtonClick}>
@@ -38,6 +41,7 @@ const SocialNetworks = () => {
                 showBlock &&
                 <div className='logos logos_down'>
                     <HideIconsList/>
+
                     <button className='header__button _hidden'/>
                 </div>
             }

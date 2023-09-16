@@ -70,6 +70,14 @@
     background: rgba(255, 255, 255, 0.30);
     position: relative;
 }
+.for_sticky{
+    top:70rem;
+    position: absolute;
+    min-height: 70rem;
+    min-width: 102vw;
+    background-color: white;
+
+}
 
 
 

@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Card from "./components/Card";
 import React, {useEffect} from "react";
 import {BlurProvider, useBlur} from "./store/BlurContext";
+import {SearchResult} from "./components/Header/Input";
 
 
 
