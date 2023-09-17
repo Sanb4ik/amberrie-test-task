@@ -11,6 +11,7 @@ import telegram from '../../images/Header/telegram.svg'
 import round_cross from '../../images/round_cross.svg'
 import {useBlur, useRemoveBlur, useSetBLur} from "../../store/BlurContext";
 import useSticky from "../../hooks/useSticky";
+import useInput from "../../hooks/useInput";
 
 
 function SearchResultItem({item}){
@@ -56,16 +57,16 @@ function SearchResults(){
 }
 
 const Input = () => {
+    const query = useInput("");
     const blur = useBlur()
     const isHeaderSticky = useSticky()
     const handleBlur = useSetBLur()
     const removeBlur = useRemoveBlur()
 
-
     return (
         <div className='search_container' style={{backgroundColor: `${isHeaderSticky ? '#F7F8FA' : ''}`}}>
             <img className='search_icon' src={search}/>
-            <input className='header_input' type='search' onFocus={handleBlur}  onBlur={removeBlur} placeholder='Что накручиваем?'/>
+            <input className='header_input' type='search' onFocus={handleBlur}  onBlur={removeBlur} placeholder='Что накручиваем?' {...query}/>
             {blur && <SearchResults/>}
             <button style={{backgroundColor: `${isHeaderSticky ? '#F0F1F2' : ''}`}}>Найти</button>
         </div>

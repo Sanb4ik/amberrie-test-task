@@ -79,6 +79,10 @@
 
 }
 
+.__down:hover .dropdown-content{
+    display: block;
+}
+
 
 
 .button_grey:hover {
@@ -152,3 +156,4 @@
     background: white;
 
 }
+

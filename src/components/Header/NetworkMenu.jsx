@@ -8,13 +8,14 @@ import repost from '../../images/Header/repost.svg'
 import view from '../../images/view.svg'
 import SecondNetworkMenu from "./SecondNetworkMenu";
 
-const NetworkMenu = (left, show, setShow) => {
+const NetworkMenu = ({left, name}) => {
+    console.log(left)
 
     return (
         <div className='dropdown-content'>
-            <div className='network_menu' style={{left: `${left.left}`}}>
+            <div className='network_menu' style={{left: `${left?.left}`}}>
                 <div className="network_menu_hat"  >
-                    ВКонтакте
+                    {name}
                 </div>
                 <div className="network_menu_item_container">
                     <div className='network_menu_item'>

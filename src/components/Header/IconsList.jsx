@@ -11,27 +11,37 @@ import NetworkMenu from "./NetworkMenu";
 import useSticky from "../../hooks/useSticky";
 
 
-function IconItem({logo, index}){
+function IconItem({img, name, index}){
     const isHeaderSticky = useSticky()
 
 
     return (
-        <div className='dropdown'>
-            <img src={logo}
+        <div className='dropdown' key={name}>
+            <img src={img}
                  className={'logo_img'}
+
                  style={{backgroundColor: `${isHeaderSticky ? '#F0F1F2' : ''}`}} />
-             <NetworkMenu left={`${44*index+ 9*index}rem`}/>
+             <NetworkMenu left={`${44*index+ 9*index}rem`} name={name}/>
         </div>
     )
 }
 
 const IconsList = () => {
-    const icons = [vk, instagram, youtube, telegram, twitch, tiktok, like, ok]
+    const icons = [
+        {img:vk, name: 'ВКонтакте'},
+        {img: instagram, name: 'Instagram*'},
+        {img: youtube, name: 'Youtube'},
+        {img: telegram, name: 'Telegram'},
+        {img: twitch, name: 'Twitch'},
+        {img: tiktok, name: 'Tik-Tok'},
+        {img: like, name: 'Likee'},
+        {img: ok, name: 'Однноклассники'},
+    ]
 
     return (
         <>
-            {icons.map((item, index) => (
-                <IconItem key={index} logo={item} index={index}/>
+            {icons.map((icon, index) => (
+                <IconItem key={index} img={icon.img} name={icon.name} index={index} />
             ))}
         </>
     );

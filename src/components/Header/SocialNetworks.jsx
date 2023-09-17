@@ -41,7 +41,7 @@ const SocialNetworks = () => {
                 showBlock &&
                 <div className='logos logos_down'>
                     <HideIconsList/>
-
+                    <NetworkMenu/>
                     <button className='header__button _hidden'/>
                 </div>
             }
